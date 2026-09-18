@@ -3,10 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Application Fruits &amp; Légumes • Présentation Officielle Intermarché</title>
-  <meta name="description" content="Système d'intelligence artificielle agentique au service du rayon Fruits &amp; Légumes Intermarché. Préparation matinale fiable, explicable et 100% sous contrôle humain.">
-  <link rel="stylesheet" href="./assets/style.css">
+  <title>Application Fruits &amp; Légumes • Intermarché | L'IA au Service du Terrain</title>
+  <meta name="description" content="Découvrez le logiciel d'intelligence artificielle agentique dédié au rayon Fruits &amp; Légumes Intermarché : 15 min au lieu d'1h30, zéro rupture, 100% sous contrôle humain.">
   <link rel="icon" type="image/webp" href="./assets/logo.webp">
+
+  <!-- Open Graph & Partage Professionnel (Teams, Slack, LinkedIn) -->
+  <meta property="og:title" content="Application Fruits &amp; Légumes • Intermarché">
+  <meta property="og:description" content="Système d'IA agentique au service du rayon frais : préparation nocturne fiable, 15 min de validation sur tablette, 100% sous contrôle humain souverain.">
+  <meta property="og:image" content="https://multimind-team.github.io/presentation-agent-fruits-et-legumes/assets/captures/apercu_hero.png">
+  <meta property="og:url" content="https://multimind-team.github.io/presentation-agent-fruits-et-legumes/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Application Fruits &amp; Légumes • Intermarché">
+  <meta name="twitter:description" content="L'intelligence artificielle agentique conçue avec et pour le chef de rayon Fruits &amp; Légumes.">
+  <meta name="twitter:image" content="https://multimind-team.github.io/presentation-agent-fruits-et-legumes/assets/captures/apercu_hero.png">
+
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
 
@@ -24,12 +36,12 @@
       </a>
 
       <nav class="site-nav">
+        <a href="#concept" class="nav-link" style="color: #FFFFFF; font-weight: 700;">Le Concept IA</a>
         <a href="#video-teaser-section" class="nav-link" style="color: var(--brand-red); font-weight: 700;">Pitch 60s ⚡</a>
-        <a href="#terrain" class="nav-link">Le Quotidien</a>
-        <a href="#video-app-section" class="nav-link">Démonstration</a>
         <a href="#cas-reel" class="nav-link">Cas Réel</a>
-        <a href="#roi" class="nav-link">ROI &amp; Bénéfices</a>
-        <a href="#brigade" class="nav-link">La Brigade IA</a>
+        <a href="#tablette" class="nav-link">La Tablette</a>
+        <a href="#comparatif" class="nav-link">Avant / Après</a>
+        <a href="#roi" class="nav-link">ROI &amp; Bilan</a>
         <a href="#galerie" class="nav-link">Écrans HD</a>
         <a href="#faq" class="nav-link">FAQ</a>
         <a href="https://multimind-team.github.io/https-github.com-multimind-team-Agents-Fruits-Legumes/Documents/Documentation%20de%20l'application/index.html" class="btn-header-doc" target="_blank" title="Consulter la documentation technique complète (23 chapitres)">
@@ -106,9 +118,149 @@
   </section>
 
   <!-- ========================================================================
+       SECTION 1 : LE CONCEPT DIFFÉRENCIATEUR : LA BRIGADE NUMÉRIQUE
+       ======================================================================== -->
+  <section class="section" id="concept">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Sous le Capot</span>
+        <h2 class="section-title">Dans les Coulisses : La Brigade Numérique</h2>
+        <p class="section-desc">
+          Pourquoi cette solution est-elle aussi fiable ? Parce qu'en coulisses, le travail n'est pas confié à un robot unique, mais à une <strong>brigade d'assistants spécialisés</strong> qui se surveillent mutuellement.
+        </p>
+      </div>
+
+      <!-- Encart analogie restaurant -->
+      <div class="callout-box" style="margin-bottom: 30px;">
+        <div class="callout-icon">💡</div>
+        <div>
+          <h4 class="callout-title">L'analogie de la brigade de restaurant</h4>
+          <p class="callout-text">
+            Dans un grand restaurant, le chef ne fait pas tout seul : il y a le commis qui épluche, le poissonnier qui vérifie la fraîcheur des arrivages, le pâtissier qui pèse au gramme près et le maître d'hôtel qui relit la commande. Si le poissonnier juge que le produit n'est pas frais, il a le droit d'interdire son service. <strong>Dans notre application, c'est exactement pareil :</strong> chaque agent a un rôle strict, et l'auditeur qualité dispose d'un droit de veto avant tout affichage sur tablette.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vidéo Brigade Numérique -->
+      <div class="video-showcase-container">
+        <div class="video-frame-topbar">
+          <div class="video-frame-dots">
+            <span class="video-dot red"></span>
+            <span class="video-dot yellow"></span>
+            <span class="video-dot green"></span>
+          </div>
+          <div class="video-frame-title">
+            <span>Vidéo Pédagogique • La Ronde Inter-Agents en Coulisses</span>
+          </div>
+          <div style="font-size: 11px; color: #9CA3AF; font-weight: 700;">INTERACTIONS AGENTS</div>
+        </div>
+
+        <div class="video-player-wrapper">
+          <video id="video-agents" autoplay muted loop playsinline controls poster="./assets/videos/agents/affiche.jpg">
+            <source src="./assets/videos/agents/interactions-agents.mp4" type="video/mp4">
+            <track label="Français" kind="subtitles" srclang="fr" src="./assets/videos/agents/sous-titres.vtt" default>
+            Votre navigateur ne supporte pas la lecture vidéo MP4.
+          </video>
+
+          <button type="button" class="video-audio-toggle" id="btn-sound-agents" onclick="toggleVideoSound('video-agents', 'btn-sound-agents', 'Explication de la brigade')">
+            <span id="btn-sound-agents-icon">🔊</span>
+            <span id="btn-sound-agents-text">Activer l'explication de la brigade</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Les 6 Rôles de la Brigade (Épurés et visuels) -->
+      <h3 style="font-size: 20px; font-weight: 800; margin: 32px 0 16px 0; color: var(--brand-dark);">
+        Les membres de la brigade et leurs attributions :
+      </h3>
+
+      <div class="agents-showcase-grid">
+        <div class="agent-role-card">
+          <div class="agent-role-header">
+            <span class="agent-emoji">👔</span>
+            <div>
+              <h4 class="agent-name">Le Leader</h4>
+              <span class="agent-role-title">Le Chef d'Orchestre</span>
+            </div>
+          </div>
+          <p class="agent-desc">
+            Coordonne les opérations de nuit, distribue les tâches sans jamais écrire de stock directement, et s'assure du respect absolu de l'échéance de 09h30.
+          </p>
+        </div>
+
+        <div class="agent-role-card">
+          <div class="agent-role-header">
+            <span class="agent-emoji">📬</span>
+            <div>
+              <h4 class="agent-name">L'Agent Courrier</h4>
+              <span class="agent-role-title">Le Facteur Assermenté</span>
+            </div>
+          </div>
+          <p class="agent-desc">
+            Relève automatiquement les 5 flux quotidiens (ventes J-1, livraisons J, casse, cadenciers Mercalys/Webtélévente) et certifie leur authenticité sans rien inventer.
+          </p>
+        </div>
+
+        <div class="agent-role-card">
+          <div class="agent-role-header">
+            <span class="agent-emoji">⚙️</span>
+            <div>
+              <h4 class="agent-name">L'Agent Données</h4>
+              <span class="agent-role-title">Le Gestionnaire Comptable</span>
+            </div>
+          </div>
+          <p class="agent-desc">
+            Exécute obligatoirement une simulation virtuelle à blanc de chaque arrivage, et attend l'accord formel du contrôle avant toute écriture définitive.
+          </p>
+        </div>
+
+        <div class="agent-role-card" style="border-top: 4px solid var(--brand-red);">
+          <div class="agent-role-header">
+            <span class="agent-emoji">🛡️</span>
+            <div>
+              <h4 class="agent-name">L'Agent Contrôle</h4>
+              <span class="agent-role-title">L'Auditeur avec Droit de Veto</span>
+            </div>
+          </div>
+          <p class="agent-desc">
+            Totalement indépendant en lecture seule stricte. Relit chaque ligne de calcul et bloque immédiatement l'opération à la moindre incohérence détectée.
+          </p>
+          <span class="agent-veto-badge">Droit de veto absolu</span>
+        </div>
+
+        <div class="agent-role-card">
+          <div class="agent-role-header">
+            <span class="agent-emoji">📈</span>
+            <div>
+              <h4 class="agent-name">L'Agent Tendances</h4>
+              <span class="agent-role-title">L'Analyste Météo &amp; Marché</span>
+            </div>
+          </div>
+          <p class="agent-desc">
+            Analyse la météo locale, les prospectus nationaux et les vacances scolaires. Applique systématiquement le bouclier anti-rupture (-30% max, +25% matelas).
+          </p>
+        </div>
+
+        <div class="agent-role-card">
+          <div class="agent-role-header">
+            <span class="agent-emoji">📱</span>
+            <div>
+              <h4 class="agent-name">L'Agent Rayon</h4>
+              <span class="agent-role-title">L'Assistant Direct Mobile</span>
+            </div>
+          </div>
+          <p class="agent-desc">
+            Connecté à l'écran de la tablette. Répond aux questions en français sans jargon, prend note des remarques d'étalage et explique chaque calcul en clair.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
        SECTION 1 : LE TEASER VIDÉO (60 SECONDES CHRONO)
        ======================================================================== -->
-  <section class="section" id="video-teaser-section" style="padding-top: 48px; padding-bottom: 56px;">
+  <section class="section section-alt" id="video-teaser-section" style="padding-top: 48px; padding-bottom: 56px;">
     <div class="container">
       <div class="section-header">
         <span class="section-tag" style="background: rgba(226, 0, 26, 0.1); color: var(--brand-red); border-color: rgba(226, 0, 26, 0.3);">
@@ -354,6 +506,117 @@
         </div>
       </div>
     </div>
+  <!-- ========================================================================
+       SECTION : LE COMPARATIF TERRAIN (6 CARTES AVANT VS APRÈS)
+       ======================================================================== -->
+  <section class="section section-alt" id="comparatif">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Transformation Métier</span>
+        <h2 class="section-title">Avant vs Avec l'Application : Ce Qui Change Chaque Matin</h2>
+        <p class="section-desc">
+          Comparez en un coup d'œil le quotidien traditionnel sous pression et l'organisation assistée par l'intelligence artificielle.
+        </p>
+      </div>
+
+      <div class="comparatif-grid">
+        <!-- Carte 1 -->
+        <div class="comparatif-card">
+          <div class="comparatif-card-title">
+            <span class="badge-num">1</span>
+            <span>Calcul de la commande quotidienne</span>
+          </div>
+          <div class="comparatif-block-before">
+            <div class="comparatif-label before">✕ Avant (Méthode Manuelle)</div>
+            1h30 de calculs manuels sous stress intense, report de cadencier papier et risque constant d'erreur de ligne avant 09h30.
+          </div>
+          <div class="comparatif-block-after">
+            <div class="comparatif-label after">✓ Avec l'Application</div>
+            Proposition complète déjà prête au réveil, vérifiée en 15 minutes sur tablette avec justification pour chaque carton.
+          </div>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="comparatif-card">
+          <div class="comparatif-card-title">
+            <span class="badge-num">2</span>
+            <span>Risque de rupture en rayon</span>
+          </div>
+          <div class="comparatif-block-before">
+            <div class="comparatif-label before">✕ Avant (Méthode Manuelle)</div>
+            Ruptures fréquentes l'après-midi sur les articles météo-sensibles (melons, tomates, salades) en cas de coup de chaud soudain.
+          </div>
+          <div class="comparatif-block-after">
+            <div class="comparatif-label after">✓ Avec l'Application</div>
+            Bouclier anti-rupture (-30% max, +25% matelas de sécurité) et anticipation automatique de la météo et des prospectus nationaux.
+          </div>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="comparatif-card">
+          <div class="comparatif-card-title">
+            <span class="badge-num">3</span>
+            <span>Gestion de la casse et du surstock</span>
+          </div>
+          <div class="comparatif-block-before">
+            <div class="comparatif-label before">✕ Avant (Méthode Manuelle)</div>
+            Commandes à l'aveugle par habitude (« je remets 5 colis comme d'habitude »), entraînant surstock et pertes sèches en benne.
+          </div>
+          <div class="comparatif-block-after">
+            <div class="comparatif-label after">✓ Avec l'Application</div>
+            Calcul précis au carton près basé sur le stock réel pointé et les ventes effectives de la veille. Zéro surplus évitable.
+          </div>
+        </div>
+
+        <!-- Carte 4 -->
+        <div class="comparatif-card">
+          <div class="comparatif-card-title">
+            <span class="badge-num">4</span>
+            <span>Pointage en chambre froide</span>
+          </div>
+          <div class="comparatif-block-before">
+            <div class="comparatif-label before">✕ Avant (Méthode Manuelle)</div>
+            Papier mouillé, stylo gelé, tri alphabétique fastidieux obligeant à rester 30 minutes dans le froid pour 430 références.
+          </div>
+          <div class="comparatif-block-after">
+            <div class="comparatif-label after">✓ Avec l'Application</div>
+            Pointage rapide ordonné par chiffre d'affaires, pavé géant utilisable avec gants et fonctionnement 100% hors-ligne.
+          </div>
+        </div>
+
+        <!-- Carte 5 -->
+        <div class="comparatif-card">
+          <div class="comparatif-card-title">
+            <span class="badge-num">5</span>
+            <span>Factures directes &amp; producteurs locaux</span>
+          </div>
+          <div class="comparatif-block-before">
+            <div class="comparatif-label before">✕ Avant (Méthode Manuelle)</div>
+            Saisie manuelle fastidieuse des bons de livraison TerreAzur / Pomona et maraîchers sur des classeurs Excel sujets aux erreurs.
+          </div>
+          <div class="comparatif-block-after">
+            <div class="comparatif-label after">✓ Avec l'Application</div>
+            Lecture automatique par OCR des factures PDF multi-pages, remplissage automatique du tableau de marge et alerte sur les hausses de prix.
+          </div>
+        </div>
+
+        <!-- Carte 6 -->
+        <div class="comparatif-card">
+          <div class="comparatif-card-title">
+            <span class="badge-num">6</span>
+            <span>Maîtrise de la décision commerciale</span>
+          </div>
+          <div class="comparatif-block-before">
+            <div class="comparatif-label before">✕ Avant (Méthode Manuelle)</div>
+            Crainte des logiciels « automatiques » opaques qui commandent sans concertation et déresponsabilisent le responsable de rayon.
+          </div>
+          <div class="comparatif-block-after">
+            <div class="comparatif-label after">✓ Avec l'Application</div>
+            Transparence totale : explicabilité en français clair de chaque chiffre, bouton d'ajustement direct et décision finale 100% humaine.
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ========================================================================
@@ -372,10 +635,10 @@
       <!-- 4 Cartes de ROI -->
       <div class="roi-grid">
         <div class="roi-card">
-          <div class="roi-metric">~380 h</div>
-          <div class="roi-title">Temps libéré chaque année</div>
+          <div class="roi-metric">~390 h / an</div>
+          <div class="roi-title">Temps Chef de Rayon Libéré</div>
           <p class="roi-desc">
-            1h15 gagnée chaque matin (15 min au lieu de 1h30). Un temps précieux réinvesti pour soigner l'étalage, vérifier la fraîcheur et accueillir les clients.
+            <strong>1h15 gagnée chaque matin</strong> (7h30 par semaine, soit ~390h par an). Un temps précieux réinvesti pour soigner l'étalage, vérifier la fraîcheur et accueillir les clients.
           </p>
         </div>
 
@@ -423,146 +686,6 @@
             <span class="limit-icon">✕</span>
             <div><strong>Aucune décision opaque (« boîte noire ») :</strong> Chaque chiffre proposé est impérativement justifié par une phrase claire en français accessible à toute l'équipe.</div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       SECTION 6 : DANS LES COULISSES : LA BRIGADE NUMÉRIQUE
-       ======================================================================== -->
-  <section class="section section-alt" id="brigade">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Sous le Capot</span>
-        <h2 class="section-title">Dans les Coulisses : La Brigade Numérique</h2>
-        <p class="section-desc">
-          Pourquoi cette solution est-elle aussi fiable ? Parce qu'en coulisses, le travail n'est pas confié à un robot unique, mais à une <strong>brigade d'assistants spécialisés</strong> qui se surveillent mutuellement.
-        </p>
-      </div>
-
-      <!-- Encart analogie restaurant -->
-      <div class="callout-box" style="margin-bottom: 30px;">
-        <div class="callout-icon">💡</div>
-        <div>
-          <h4 class="callout-title">L'analogie de la brigade de restaurant</h4>
-          <p class="callout-text">
-            Dans un grand restaurant, le chef ne fait pas tout seul : il y a le commis qui épluche, le poissonnier qui vérifie la fraîcheur des arrivages, le pâtissier qui pèse au gramme près et le maître d'hôtel qui relit la commande. Si le poissonnier juge que le produit n'est pas frais, il a le droit d'interdire son service. <strong>Dans notre application, c'est exactement pareil :</strong> chaque agent a un rôle strict, et l'auditeur qualité dispose d'un droit de veto avant tout affichage sur tablette.
-          </p>
-        </div>
-      </div>
-
-      <!-- Vidéo Brigade Numérique -->
-      <div class="video-showcase-container">
-        <div class="video-frame-topbar">
-          <div class="video-frame-dots">
-            <span class="video-dot red"></span>
-            <span class="video-dot yellow"></span>
-            <span class="video-dot green"></span>
-          </div>
-          <div class="video-frame-title">
-            <span>Vidéo Pédagogique • La Ronde Inter-Agents en Coulisses</span>
-          </div>
-          <div style="font-size: 11px; color: #9CA3AF; font-weight: 700;">INTERACTIONS AGENTS</div>
-        </div>
-
-        <div class="video-player-wrapper">
-          <video id="video-agents" autoplay muted loop playsinline controls poster="./assets/videos/agents/affiche.jpg">
-            <source src="./assets/videos/agents/interactions-agents.mp4" type="video/mp4">
-            <track label="Français" kind="subtitles" srclang="fr" src="./assets/videos/agents/sous-titres.vtt" default>
-            Votre navigateur ne supporte pas la lecture vidéo MP4.
-          </video>
-
-          <button type="button" class="video-audio-toggle" id="btn-sound-agents" onclick="toggleVideoSound('video-agents', 'btn-sound-agents', 'Explication de la brigade')">
-            <span id="btn-sound-agents-icon">🔊</span>
-            <span id="btn-sound-agents-text">Activer l'explication de la brigade</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Les 6 Rôles de la Brigade (Épurés et visuels) -->
-      <h3 style="font-size: 20px; font-weight: 800; margin: 32px 0 16px 0; color: var(--brand-dark);">
-        Les membres de la brigade et leurs attributions :
-      </h3>
-
-      <div class="agents-showcase-grid">
-        <div class="agent-role-card">
-          <div class="agent-role-header">
-            <span class="agent-emoji">👔</span>
-            <div>
-              <h4 class="agent-name">Le Leader</h4>
-              <span class="agent-role-title">Le Chef d'Orchestre</span>
-            </div>
-          </div>
-          <p class="agent-desc">
-            Coordonne les opérations de nuit, distribue les tâches sans jamais écrire de stock directement, et s'assure du respect absolu de l'échéance de 09h30.
-          </p>
-        </div>
-
-        <div class="agent-role-card">
-          <div class="agent-role-header">
-            <span class="agent-emoji">📬</span>
-            <div>
-              <h4 class="agent-name">L'Agent Courrier</h4>
-              <span class="agent-role-title">Le Facteur Assermenté</span>
-            </div>
-          </div>
-          <p class="agent-desc">
-            Relève automatiquement les 5 flux quotidiens (ventes J-1, livraisons J, casse, cadenciers Mercalys/Webtélévente) et certifie leur authenticité sans rien inventer.
-          </p>
-        </div>
-
-        <div class="agent-role-card">
-          <div class="agent-role-header">
-            <span class="agent-emoji">⚙️</span>
-            <div>
-              <h4 class="agent-name">L'Agent Données</h4>
-              <span class="agent-role-title">Le Gestionnaire Comptable</span>
-            </div>
-          </div>
-          <p class="agent-desc">
-            Exécute obligatoirement une simulation virtuelle à blanc de chaque arrivage, et attend l'accord formel du contrôle avant toute écriture définitive.
-          </p>
-        </div>
-
-        <div class="agent-role-card" style="border-top: 4px solid var(--brand-red);">
-          <div class="agent-role-header">
-            <span class="agent-emoji">🛡️</span>
-            <div>
-              <h4 class="agent-name">L'Agent Contrôle</h4>
-              <span class="agent-role-title">L'Auditeur avec Droit de Veto</span>
-            </div>
-          </div>
-          <p class="agent-desc">
-            Totalement indépendant en lecture seule stricte. Relit chaque ligne de calcul et bloque immédiatement l'opération à la moindre incohérence détectée.
-          </p>
-          <span class="agent-veto-badge">Droit de veto absolu</span>
-        </div>
-
-        <div class="agent-role-card">
-          <div class="agent-role-header">
-            <span class="agent-emoji">📈</span>
-            <div>
-              <h4 class="agent-name">L'Agent Tendances</h4>
-              <span class="agent-role-title">L'Analyste Météo &amp; Marché</span>
-            </div>
-          </div>
-          <p class="agent-desc">
-            Analyse la météo locale, les prospectus nationaux et les vacances scolaires. Applique systématiquement le bouclier anti-rupture (-30% max, +25% matelas).
-          </p>
-        </div>
-
-        <div class="agent-role-card">
-          <div class="agent-role-header">
-            <span class="agent-emoji">📱</span>
-            <div>
-              <h4 class="agent-name">L'Agent Rayon</h4>
-              <span class="agent-role-title">L'Assistant Direct Mobile</span>
-            </div>
-          </div>
-          <p class="agent-desc">
-            Connecté à l'écran de la tablette. Répond aux questions en français sans jargon, prend note des remarques d'étalage et explique chaque calcul en clair.
-          </p>
         </div>
       </div>
     </div>
@@ -728,10 +851,10 @@
   <section class="section" id="faq">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Questions Pratiques</span>
-        <h2 class="section-title">Foire Aux Questions</h2>
+        <span class="section-tag">Questions Décideurs</span>
+        <h2 class="section-title">Foire Aux Questions &amp; Réponses aux Objections</h2>
         <p class="section-desc">
-          Les réponses claires aux questions que se posent légitimement les chefs d'entreprise et directeurs de magasin.
+          Les réponses concrètes aux interrogations légitimes des chefs d'entreprise, adhérents et directeurs de magasin.
         </p>
       </div>
 
@@ -739,50 +862,60 @@
         <div class="faq-card">
           <div class="faq-question">
             <span class="faq-q-badge">Q1</span>
-            <span>Comment l'application gère-t-elle les changements brutaux de météo ?</span>
+            <span>Et si l'agent d'IA se trompe dans une proposition ?</span>
           </div>
           <p class="faq-answer">
-            Elle est connectée aux prévisions météorologiques locales. Dès qu'une vague de chaleur ou un week-end ensoleillé est annoncé, elle anticipe la hausse de consommation sur les melons, pastèques, salades et tomates. En cas de pluie ou de froid, elle adapte les légumes de potée.
+            Deux garde-fous stricts protègent le magasin : premièrement, le <strong>bouclier anti-rupture</strong> plafonne toute baisse à -30% maximum et applique un matelas de sécurité de +25%. Deuxièmement, <strong>l'ordinateur n'envoie rien seul</strong> : le chef de rayon garde le pouvoir d'ajuster chaque quantité d'une seule touche avant la transmission centrale.
           </p>
         </div>
 
         <div class="faq-card">
           <div class="faq-question">
             <span class="faq-q-badge">Q2</span>
-            <span>Que se passe-t-il si la chambre froide bloque le réseau Wi-Fi ?</span>
+            <span>Quel matériel faut-il acheter ? Faut-il une tablette durcie coûteuse ?</span>
           </div>
           <p class="faq-answer">
-            L'application est conçue en <strong>mode déconnecté résilient</strong>. Le chef de rayon peut descendre en chambre froide et pointer ses stocks physiques même sans aucun signal réseau. Dès qu'il remonte en magasin, les données se synchronisent automatiquement.
+            Aucun matériel propriétaire ou onéreux n'est requis. L'interface web responsive fonctionne parfaitement sur <strong>n'importe quelle tablette grand public standard</strong> (iPad, Samsung Galaxy Tab), sur un smartphone professionnel ou sur le PC fixe du bureau rayon. Une coque antichoc étanche à 30 € suffit amplement pour la réserve.
           </p>
         </div>
 
         <div class="faq-card">
           <div class="faq-question">
             <span class="faq-q-badge">Q3</span>
-            <span>Comment sont gérées les factures directes (TerreAzur / Pomona et maraîchers) ?</span>
+            <span>Combien de temps faut-il pour former un chef de rayon ?</span>
           </div>
           <p class="faq-answer">
-            L'application intègre un module de reconnaissance optique (OCR) qui lit automatiquement les factures PDF multi-pages des grossistes et producteurs locaux. Elle renseigne les quantités, les prix d'achat HT et prépare le classeur de contrôle des marges sans aucune ressaisie manuelle.
+            <strong>Moins de 15 minutes chrono.</strong> L'application a été conçue par et pour le terrain : aucune commande informatique complexe, aucun terme technique. Les photos des colis permettent une reconnaissance immédiate, et les touches « + » et « - » fonctionnent comme un cadencier papier classique.
           </p>
         </div>
 
         <div class="faq-card">
           <div class="faq-question">
             <span class="faq-q-badge">Q4</span>
-            <span>Pourquoi plafonner les baisses de commande à -30% maximum ?</span>
+            <span>Qui maintient le système et assure la continuité ?</span>
           </div>
           <p class="faq-answer">
-            C'est notre <strong>bouclier anti-rupture</strong>. Une mauvaise journée de vente isolée (un violent orage un mardi qui vide le magasin) ne justifie pas de couper les arrivages du lendemain. En plafonnant la baisse à -30% et en ajoutant un matelas de sécurité de +25%, l'application protège le chiffre d'affaires.
+            L'architecture est entièrement autonome : un démon de veille 24/7 (Tri-Sentinelle) surveille les imports sans nécessiter d'intervention manuelle. De plus, le projet dispose d'une <strong>documentation technique officielle exhaustive de 23 chapitres et 48 fiches</strong>, assurant une passation et une maintenance pérenne sans dépendre d'une seule personne.
           </p>
         </div>
 
         <div class="faq-card">
           <div class="faq-question">
             <span class="faq-q-badge">Q5</span>
-            <span>Comment déployer cette application dans un autre supermarché Intermarché ?</span>
+            <span>Comment l'application fonctionne-t-elle en chambre froide sans réseau Wi-Fi ?</span>
           </div>
           <p class="faq-answer">
-            La solution a été pensée pour être reproductible facilement : elle nécessite simplement une tablette ou smartphone standard pour le rayon, un serveur local en magasin et l'accès aux exports habituels Mercalys et Webtélévente. La brigade d'agents s'adapte automatiquement au cadencier de chaque magasin.
+            Elle est architecturée en <strong>mode déconnecté résilient (Offline First)</strong>. Dès que le responsable descend en chambre froide, l'application continue d'enregistrer les comptages et les demi-colis en mémoire locale. La synchronisation avec le serveur s'effectue automatiquement dès la sortie de la réserve.
+          </p>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-question">
+            <span class="faq-q-badge">Q6</span>
+            <span>Comment sont gérées les factures directes (TerreAzur / Pomona et maraîchers) ?</span>
+          </div>
+          <p class="faq-answer">
+            L'application intègre un module de reconnaissance optique (OCR) qui lit automatiquement les factures PDF multi-pages des grossistes et producteurs locaux. Elle renseigne les quantités livrées, les prix d'achat HT et remplit le classeur de contrôle des marges sans aucune saisie manuelle.
           </p>
         </div>
       </div>
@@ -831,6 +964,9 @@
           <p class="footer-brand-desc">
             Système d'intelligence artificielle agentique au service du rayon Fruits &amp; Légumes Intermarché. Innovation conçue pour fiabiliser les commandes, préserver la marge commerciale et assister l'humain au quotidien.
           </p>
+          <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 6px; padding: 12px 14px; margin-top: 14px; font-size: 12.5px; color: #9CA3AF; line-height: 1.5;">
+            🔒 <strong>Clarification Sécurité DSI :</strong> Cette vitrine web est publique et purement statique. L'application métier elle-même fonctionne <strong>100% offline dans l'environnement local et sécurisé du supermarché</strong>, sans aucun accès extérieur ni fuite de données commerciales.
+          </div>
         </div>
 
         <div>

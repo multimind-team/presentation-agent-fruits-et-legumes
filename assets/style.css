@@ -1454,3 +1454,95 @@ img, video {
   align-items: center;
   gap: 8px;
 }
+
+/* ==========================================================================
+   CARTES COMPARATIVES « AVANT VS AVEC L'APPLICATION » (6 CARTES TERRAIN)
+   ========================================================================== */
+.comparatif-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.comparatif-card {
+  background: #FFFFFF;
+  border: 1px solid var(--brand-border);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-top: 4px solid var(--brand-dark);
+}
+
+.comparatif-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-top-color: var(--brand-red);
+}
+
+.comparatif-card-title {
+  font-size: 16.5px;
+  font-weight: 800;
+  color: var(--brand-dark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--brand-border);
+}
+
+.comparatif-card-title span.badge-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--brand-red);
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.comparatif-block-before {
+  background: #FEF2F2;
+  border-left: 3px solid #EF4444;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #991B1B;
+  line-height: 1.45;
+}
+
+.comparatif-block-after {
+  background: #ECFDF5;
+  border-left: 3px solid #10B981;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #065F46;
+  line-height: 1.45;
+}
+
+.comparatif-label {
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comparatif-label.before {
+  color: #DC2626;
+}
+
+.comparatif-label.after {
+  color: #059669;
+}
