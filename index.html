@@ -24,13 +24,14 @@
       </a>
 
       <nav class="site-nav">
+        <a href="#video-teaser-section" class="nav-link" style="color: var(--brand-red); font-weight: 700;">Pitch 60s ⚡</a>
         <a href="#concept" class="nav-link">Le Concept</a>
-        <a href="#video-app-section" class="nav-link">En Vidéo : L'Application</a>
-        <a href="#fonctionnalites" class="nav-link">Toutes les Fonctionnalités</a>
-        <a href="#video-agents-section" class="nav-link">La Brigade Numérique</a>
+        <a href="#video-app-section" class="nav-link">L'Application</a>
+        <a href="#fonctionnalites" class="nav-link">Fonctionnalités</a>
+        <a href="#video-agents-section" class="nav-link">La Brigade</a>
         <a href="#galerie" class="nav-link">Écrans en Direct</a>
         <a href="#comparatif" class="nav-link">Bénéfices</a>
-        <a href="#faq" class="nav-link">Questions Fréquentes</a>
+        <a href="#faq" class="nav-link">FAQ</a>
         <a href="https://multimind-team.github.io/https-github.com-multimind-team-Agents-Fruits-Legumes/Documents/Documentation%20de%20l'application/index.html" class="btn-header-doc" target="_blank" title="Consulter la documentation technique complète (23 chapitres)">
           <span>Documentation (23 chapitres)</span>
           <span style="font-size: 14px;">↗</span>
@@ -58,14 +59,14 @@
       </p>
 
       <div class="hero-actions">
-        <a href="#video-app-section" class="btn-primary">
-          <span>▶ Voir l'application sur le terrain (2 min 49)</span>
+        <a href="#video-teaser-section" class="btn-primary">
+          <span>⚡ Voir le Teaser en 60 secondes</span>
         </a>
-        <a href="#fonctionnalites" class="btn-secondary">
-          <span>Découvrir toutes les fonctionnalités</span>
+        <a href="#video-app-section" class="btn-secondary">
+          <span>▶ Démo terrain complète (2 min 49)</span>
         </a>
         <a href="#video-agents-section" class="btn-secondary">
-          <span>Comment fonctionne la brigade IA ?</span>
+          <span>La brigade numérique</span>
         </a>
       </div>
 
@@ -99,6 +100,98 @@
           <div class="metric-val">100%</div>
           <div class="metric-label">Contrôle humain souverain</div>
           <div class="metric-sub">Zéro commande envoyée à l'aveugle</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION TEASER : LE PITCH EN 60 SECONDES CHRONO
+       ======================================================================== -->
+  <section class="section" id="video-teaser-section" style="padding-top: 48px; padding-bottom: 56px;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="background: rgba(226, 0, 26, 0.1); color: var(--brand-red); border-color: rgba(226, 0, 26, 0.3);">
+          Format Express • 60 Secondes Chrono
+        </span>
+        <h2 class="section-title">Le Défi du Matin à Carmaux Résolu en 1 Minute</h2>
+        <p class="section-desc">
+          Vous êtes pressé ? Découvrez en 60 secondes chrono comment l'intelligence artificielle agentique sécurise chaque matin la commande du rayon Fruits &amp; Légumes avant l'échéance critique de <strong>09h30</strong>.
+        </p>
+      </div>
+
+      <!-- Lecteur Vidéo Teaser 60s avec charte Mousquetaires -->
+      <div class="video-showcase-container">
+        <div class="video-frame-topbar">
+          <div class="video-frame-dots">
+            <span class="video-dot red"></span>
+            <span class="video-dot yellow"></span>
+            <span class="video-dot green"></span>
+          </div>
+          <div class="video-frame-title">
+            <span>Vidéo Teaser • Le Défi du Matin en 1 Minute (Carmaux)</span>
+          </div>
+          <div style="font-size: 11px; color: #9CA3AF; font-weight: 700;">60 SECONDES CHRONO</div>
+        </div>
+
+        <div class="video-player-wrapper">
+          <video id="video-teaser" autoplay muted loop playsinline controls poster="./assets/videos/teaser/affiche.jpg">
+            <source src="./assets/videos/teaser/teaser-60s.mp4" type="video/mp4">
+            <track label="Français" kind="subtitles" srclang="fr" src="./assets/videos/teaser/sous-titres.vtt" default>
+            Votre navigateur ne supporte pas la lecture vidéo MP4.
+          </video>
+
+          <button type="button" class="video-audio-toggle" id="btn-sound-teaser" onclick="toggleVideoSound('video-teaser', 'btn-sound-teaser', 'Voix d\'Henri')">
+            <span id="btn-sound-teaser-icon">🔊</span>
+            <span id="btn-sound-teaser-text">Activer la narration (Voix d'Henri)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Découpage en 5 temps forts -->
+      <h3 style="font-size: 20px; font-weight: 800; margin-bottom: 16px; color: var(--brand-dark);">
+        Les 5 temps forts du pitch express :
+      </h3>
+
+      <div class="timeline-grid" style="grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));">
+        <div class="timeline-card">
+          <span class="timeline-time-badge">00:00 - 00:11</span>
+          <h4 class="timeline-title">1. L'Urgence de 09h30</h4>
+          <p class="timeline-desc">
+            430 références fraîches en flux tendu. La commande centrale doit impérativement partir avant 09h30, zéro droit à l'erreur.
+          </p>
+        </div>
+
+        <div class="timeline-card">
+          <span class="timeline-time-badge">00:11 - 00:23</span>
+          <h4 class="timeline-title">2. La Brigade de Nuit</h4>
+          <p class="timeline-desc">
+            7 assistants numériques spécialisés prennent le relais : imports certifiés, contrôle strict avec droit de veto et bouclier anti-rupture.
+          </p>
+        </div>
+
+        <div class="timeline-card">
+          <span class="timeline-time-badge">00:23 - 00:35</span>
+          <h4 class="timeline-title">3. Le Terrain &amp; Réserve</h4>
+          <p class="timeline-desc">
+            Tablette en main : pointage express guidé par chiffre d'affaires en chambre froide et pavé géant pour les demi-colis même sans Wi-Fi.
+          </p>
+        </div>
+
+        <div class="timeline-card">
+          <span class="timeline-time-badge">00:35 - 00:47</span>
+          <h4 class="timeline-title">4. Décision Humaine</h4>
+          <p class="timeline-desc">
+            Console cadencier explicable en clair. L'humain garde 100% de la décision avant de valider sereinement sur Webtélévente.
+          </p>
+        </div>
+
+        <div class="timeline-card">
+          <span class="timeline-time-badge">00:47 - 01:00</span>
+          <h4 class="timeline-title">5. Résultats Concrets</h4>
+          <p class="timeline-desc">
+            15 minutes au lieu d'1h30, 0 rupture, marge préservée à 34,8% et plus de présence humaine pour les clients du magasin.
+          </p>
         </div>
       </div>
     </div>
@@ -1040,6 +1133,7 @@
           <h4 class="footer-col-title">Navigation Rapide</h4>
           <ul class="footer-links">
             <li><a href="#hero">Haut de page</a></li>
+            <li><a href="#video-teaser-section" style="color: #FF6B7A; font-weight: 700;">Pitch en 60 secondes ⚡</a></li>
             <li><a href="#concept">Le concept expliqué</a></li>
             <li><a href="#video-app-section">Vidéo application terrain</a></li>
             <li><a href="#fonctionnalites">Toutes les fonctionnalités</a></li>
